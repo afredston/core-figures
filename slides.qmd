@@ -3,7 +3,9 @@ title: "Making Scientific Figures"
 subtitle: "CORE Workshop - Ocean Sciences"
 author: "Alexa Fredston"
 date: "February 14, 2024"
-format: revealjs
+format: 
+  revealjs:
+    slide-number: true
 editor: visual
 ---
 
@@ -83,10 +85,9 @@ Panels are OK for dividing up results but just be sure they are clearly delineat
 
 It can take a while to hone in on this message, but you should know what it is by the time you are writing up final results
 
-
 ------------------------------------------------------------------------
 
-##Example: one message, one figure  
+##Example: one message, one figure
 
 ![Burgess *et al.* 2023](burgess_2023.png)
 
@@ -94,9 +95,9 @@ It can take a while to hone in on this message, but you should know what it is b
 
 ## Use your imagination
 
-Making and customizing beautiful and creative figures is much easier than it used to be 
+Making and customizing beautiful and creative figures is much easier than it used to be
 
-Don't be constrained by the default way your personal research workflow generates plots 
+Don't be constrained by the default way your personal research workflow generates plots
 
 ------------------------------------------------------------------------
 
@@ -116,13 +117,13 @@ Some key questions to ask yourself:
 -   What summary statistics (e.g., means, trends) do you want to emphasize? How can you do this while still plotting the raw data?
 -   Do you need to plot your data over space? If so, does a map or an abstraction of space work better?
 -   Do you need to plot your data over time?
--   How will you visualize uncertainty or variation in your data? 
+-   How will you visualize uncertainty or variation in your data?
 
 ------------------------------------------------------------------------
 
-## Stay close to the data 
+## Stay close to the data
 
-Some journals **require** you to plot raw data 
+Some journals **require** you to plot raw data
 
 *Be very hesitant about omitting outliers*
 
@@ -165,19 +166,18 @@ ggplot(penguins, aes(x = bill_length_mm, y = species)) +
 
 ![Exploratory plot by Alexa](tileplot.png)
 
-
 ------------------------------------------------------------------------
 
 ## Conceptual figures
 
-I am a huge fan of the conceptual diagram, which can summarize a huge amount of what you did in a simple, appealing format  
+I am a huge fan of the conceptual diagram, which can summarize a huge amount of what you did in a simple, appealing format
 
 Some ways to use them:
 
-* Describing an experimental procedure
-* Outlining a model workflow
-* Summarizing a collaborative process 
-* Characterizing a complicated dataset 
+-   Describing an experimental procedure
+-   Outlining a model workflow
+-   Summarizing a collaborative process
+-   Characterizing a complicated dataset
 
 ------------------------------------------------------------------------
 
@@ -199,15 +199,15 @@ Some ways to use them:
 
 ------------------------------------------------------------------------
 
-## Annotation 
+## Annotation
 
-Don't hesitate to draw on and with your plots! 
+Don't hesitate to draw on and with your plots!
 
-Remember that point size, shape, color, and shading can all communicate for you 
+Remember that point size, shape, color, and shading can all communicate for you
 
 You can plot icons from [The Noun Project](https://thenounproject.com/) or [biorender](https://www.biorender.com/) or silhouettes of taxa from [phylopic](https://www.phylopic.org/)
 
-I often do this in a software called [Inkscape](https://inkscape.org/) (a little buggy on Macs though), which is also great for resizing figures to meet journal guidelines 
+I often do this in a software called [Inkscape](https://inkscape.org/) (a little buggy on Macs though), which is also great for resizing figures to meet journal guidelines
 
 ------------------------------------------------------------------------
 
@@ -217,9 +217,9 @@ Should be as short and straightforward as possible while still explaining everyt
 
 Try to avoid acronyms and jargon. The more intuitively you design your figure, the less you need to explain here
 
-Do not make readers hunt through your manuscript to find explanations of things being plotted that are not in the figure caption!! 
+Do not make readers hunt through your manuscript to find explanations of things being plotted that are not in the figure caption!!
 
-If your figure caption is getting incredibly long that is a sign your figure may need editing 
+If your figure caption is getting incredibly long that is a sign your figure may need editing
 
 ------------------------------------------------------------------------
 
@@ -227,11 +227,11 @@ If your figure caption is getting incredibly long that is a sign your figure may
 
 What to plot depends on what you want the viewer to take away -- could be bathymetry, country boundaries, major roads or rivers, model outputs... but don't try to put more than one or two of these on the same map
 
-Choose your projection to align with the areas you want to be most visible  
+Choose your projection to align with the areas you want to be most visible
 
-Do not assume people know where your study region is; consider including a zoomed-out map situating it on the continent/globe 
+Do not assume people know where your study region is; consider including a zoomed-out map situating it on the continent/globe
 
-Be aware it is extremely difficult to plot uncertainty on a map. People often plot multiple maps side-by-side to get around this 
+Be aware it is extremely difficult to plot uncertainty on a map. People often plot multiple maps side-by-side to get around this
 
 ------------------------------------------------------------------------
 
@@ -239,34 +239,29 @@ Be aware it is extremely difficult to plot uncertainty on a map. People often pl
 
 ![Fredston *et al.* 2023](fredston_2023_map.png)
 
-
 ------------------------------------------------------------------------
-
 
 ## Example: heatmaps ("chloropleths")
 
 ![New York Times](nyt.jpg)
 
-
 ------------------------------------------------------------------------
-
 
 ## Color choices {.smaller}
 
-Use color only when you need color; remember people will often print papers in black and white 
+Use color only when you need color; remember people will often print papers in black and white
 
 You can find color palettes or ramps online and copy over their IDs (look for "hex" or "RGB" codes)
 
 Match colors to your variable types:
 
-* Continuous variables --> continuous color gradients
-* Ordered variables --> discrete color gradients
-* Categorical variables --> discrete color palettes
+-   Continuous variables --\> continuous color gradients
+-   Ordered variables --\> discrete color gradients
+-   Categorical variables --\> discrete color palettes
 
-*Make your plots colorblind-friendly.* Somewhere between 5-10% of the general population has some limitation to their color vision. [This site](https://mk.bcgsc.ca/colorblind/palettes.mhtml#page-container) has some great palettes for continuous and categorical data that are colorblind-friendly, and you can read a simple explainer [here](https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40). 
+*Make your plots colorblind-friendly.* Somewhere between 5-10% of the general population has some limitation to their color vision. [This site](https://mk.bcgsc.ca/colorblind/palettes.mhtml#page-container) has some great palettes for continuous and categorical data that are colorblind-friendly, and you can read a simple explainer [here](https://davidmathlogic.com/colorblind/#%23D81B60-%231E88E5-%23FFC107-%23004D40).
 
-Use [colorbrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) to explore color choices, especially for maps 
-
+Use [colorbrewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) to explore color choices, especially for maps
 
 ------------------------------------------------------------------------
 
@@ -288,11 +283,11 @@ Be mindful of the interpretation of your colors. For example, red colors are oft
 
 If you aren't using a variable that is commonly associated with a color try to visualize it with a neutral color that won't be confusing
 
-Be consistent across plots and use the same colors for the same variables in all your figures 
+Be consistent across plots and use the same colors for the same variables in all your figures
 
 ------------------------------------------------------------------------
 
-## Example: color choices 
+## Example: color choices
 
 ![Antão *et al.* 2020](antao_2020.png)
 
@@ -304,21 +299,21 @@ Be consistent across plots and use the same colors for the same variables in all
 
 ------------------------------------------------------------------------
 
-## Interactive plots, gifs, etc. 
+## Interactive plots, gifs, etc.
 
 People increasingly make interactive plots to go with their papers; see [Gavin Fay's example](https://gavinfay.shinyapps.io/ebfm-ne-teaching-eg/)
 
-You can also generate gifs of your figures to embed in talks, which is really helpful for showing (for example) things evolving through time 
+You can also generate gifs of your figures to embed in talks, which is really helpful for showing (for example) things evolving through time
 
 ------------------------------------------------------------------------
 
 ## You didn't talk about tables
 
-Tables in the main text of a paper can often be replaced by figures that show extra information, like variance in parameter values 
+Tables in the main text of a paper can often be replaced by figures that show extra information, like variance in parameter values
 
 However, sometimes tables and text boxes are important for summarizing descriptive information
 
-I use them for reporting lots of p-values and models in supplementary information 
+I use them for reporting lots of p-values and models in supplementary information
 
 ------------------------------------------------------------------------
 
@@ -326,15 +321,18 @@ I use them for reporting lots of p-values and models in supplementary informatio
 
 ![Fredston *et al.* 2023](fredston_2023_table.png)
 
-
 ------------------------------------------------------------------------
-
 
 ## More resources for data visualization
 
-[Ten Simple Rules for Better Figures](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4161295/)
-[Journal of Biogeography post](https://journalofbiogeographynews.org/2020/07/15/figures-the-art-of-science/), a reminder to always follow the journal guidelines! 
-[Betsy Mason article](https://knowablemagazine.org/content/article/mind/2019/science-data-visualization), full of examples of how scientists can make better visualizations!
-[Claus Wilke's book](https://clauswilke.com/dataviz/), a deep dive into data visualization
-[The Data Visualization Catalogue](https://datavizcatalogue.com/), for browsing plot options
-[Data Imaginist](https://www.data-imaginist.com/posts/2018-05-30-scico-and-the-colour-conundrum/index.html), on color theory 
+[Ten Simple Rules for Better Figures](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4161295/) 
+
+[Journal of Biogeography post](https://journalofbiogeographynews.org/2020/07/15/figures-the-art-of-science/), a reminder to always follow the journal guidelines
+
+[Betsy Mason article](https://knowablemagazine.org/content/article/mind/2019/science-data-visualization), full of examples of how scientists can make better visualizations
+
+[Claus Wilke's book](https://clauswilke.com/dataviz/), a deep dive into data visualization 
+
+[The Data Visualization Catalogue](https://datavizcatalogue.com/), for browsing plot options 
+
+[Data Imaginist](https://www.data-imaginist.com/posts/2018-05-30-scico-and-the-colour-conundrum/index.html), on color theory
