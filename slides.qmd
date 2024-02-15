@@ -1,5 +1,5 @@
 ---
-title: "Making Scientific Figures"
+title: "The theory and practice of effective scientific figures"
 subtitle: "CORE Workshop - Ocean Sciences"
 author: "Alexa Fredston"
 date: "February 14, 2024"
@@ -325,14 +325,14 @@ I use them for reporting lots of p-values and models in supplementary informatio
 
 ## More resources for data visualization
 
-[Ten Simple Rules for Better Figures](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4161295/) 
+[Ten Simple Rules for Better Figures](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4161295/)
 
 [Journal of Biogeography post](https://journalofbiogeographynews.org/2020/07/15/figures-the-art-of-science/), a reminder to always follow the journal guidelines
 
 [Betsy Mason article](https://knowablemagazine.org/content/article/mind/2019/science-data-visualization), full of examples of how scientists can make better visualizations
 
-[Claus Wilke's book](https://clauswilke.com/dataviz/), a deep dive into data visualization 
+[Claus Wilke's book](https://clauswilke.com/dataviz/), a deep dive into data visualization
 
-[The Data Visualization Catalogue](https://datavizcatalogue.com/), for browsing plot options 
+[The Data Visualization Catalogue](https://datavizcatalogue.com/), for browsing plot options
 
 [Data Imaginist](https://www.data-imaginist.com/posts/2018-05-30-scico-and-the-colour-conundrum/index.html), on color theory
